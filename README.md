@@ -17,3 +17,15 @@ RESPONSE: {"status": "OK"}
 Запушить образ в dockerhub.  
 На выходе необходимо предоставить имя репозитория и тэг на Dockerhub ссылку на github c Dockerfile,  
 либо приложить Dockerfile в ДЗ
+
+### Запуск
+Сборка
+```
+docker build . --tag "purchase-msa-docker"
+```
+
+Запуск
+```
+docker run purchase-msa-docker -p 8000:8000
+```
+Доступ http://localhost:8000/actuator/health

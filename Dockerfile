@@ -2,6 +2,7 @@ FROM maven:3.8.7-eclipse-temurin-17-alpine as build
 WORKDIR /app
 
 COPY pom.xml .
+
 RUN mvn --batch-mode --fail-never dependency:resolve-plugins dependency:resolve --file pom.xml
 
 COPY src src
