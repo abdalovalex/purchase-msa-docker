@@ -28,4 +28,4 @@ docker build . --tag "purchase-msa-docker"
 ```
 docker run purchase-msa-docker -p 8000:8000
 ```
-Доступ http://localhost:8000/actuator/health
+Доступ http://localhost:8000/health
