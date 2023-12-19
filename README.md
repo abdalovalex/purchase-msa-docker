@@ -26,6 +26,6 @@ docker build . --tag "purchase-msa-docker"
 
 Запуск
 ```
-docker run purchase-msa-docker -p 8000:8000
+docker run -p 8000:8000 purchase-msa-docker
 ```
 Доступ http://localhost:8000/health
